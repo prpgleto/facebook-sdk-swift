@@ -30,6 +30,7 @@ public struct LinkShareContent: ContentProtocol {
 
    This value may be discarded for specially handled links (ex: iTunes URLs).
    */
+  @available(*, deprecated, message: "`title` is deprecated from Graph API 2.9")
   public var title: String?
 
   /**
@@ -38,6 +39,7 @@ public struct LinkShareContent: ContentProtocol {
    If not specified, this field is automatically populated by information scraped from the contentURL,
    typically the title of the page. This value may be discarded for specially handled links (ex: iTunes URLs).
    */
+  @available(*, deprecated, message: "`description` is deprecated from Graph API 2.9")
   public var description: String?
 
   /**
@@ -48,6 +50,7 @@ public struct LinkShareContent: ContentProtocol {
   public var quote: String?
 
   /// The URL of a picture to attach to this content.
+ @available(*, deprecated, message: "`imageURL` is deprecated from Graph API 2.9")
   public var imageURL: URL?
 
   /**
